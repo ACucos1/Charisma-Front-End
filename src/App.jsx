@@ -144,10 +144,6 @@ function App() {
     loadbcd()
   }, [])
 
-  useEffect(() => {
-    
-  }, [displayBools.loading])
-
   return (
     <div className="App">
       <Header handleMetaMaskClick={handleMetaMaskClick} user={web3Data.metaMaskAddress ? truncateAccount(web3Data.metaMaskAddress) : 'Connect Wallet'}/>
